@@ -1,0 +1,17 @@
+{
+  "name": "Hana — Partner Virtualmu",
+  "short_name": "Hana",
+  "description": "Teman virtual anime yang hangat dan perhatian.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#fffafd",
+  "theme_color": "#f6d8eb",
+  "icons": [
+    {
+      "src": "assets/heart.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

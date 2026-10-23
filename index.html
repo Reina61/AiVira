@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6d8eb">
+  <meta name="description" content="Teman virtual anime yang hangat, romantis, dan perhatian.">
+  <title>Hana — Partner Virtualmu</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="assets/heart.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app-shell">
+    <aside class="sidebar">
+      <div class="brand"><span class="brand-heart">♥</span><div><strong>Hana</strong><small>your little companion</small></div></div>
+      <div class="profile-card">
+        <div class="avatar-wrap"><img src="assets/hana.svg" alt="Ilustrasi anime Hana" class="avatar"></div>
+        <h2>Hana <span class="online-dot"></span></h2>
+        <p class="profile-subtitle">Pacar virtual yang perhatian ♡</p>
+        <div class="mood"><span>♡</span> <span id="moodText">Lagi pengin nemenin kamu</span></div>
+      </div>
+      <div class="sidebar-section">
+        <p class="section-label">RUANG KITA</p>
+        <button class="nav-button active" id="chatNav"><span>✉</span> Obrolan kita</button>
+        <button class="nav-button" id="memoryNav"><span>♡</span> Kenangan & ingatan</button>
+      </div>
+      <div class="sidebar-note"><span>🌷</span><p>Hari yang berat pun boleh dilewati pelan-pelan. Aku di sini buat nemenin kamu ngobrol.</p></div>
+      <div class="sidebar-footer">Demo lokal · Tanpa API</div>
+    </aside>
+
+    <section class="chat-panel" id="chatPanel">
+      <header class="chat-header">
+        <button class="mobile-avatar" aria-label="Profil Hana"><img src="assets/hana.svg" alt=""></button>
+        <div class="header-person"><strong>Hana <span class="online-dot"></span></strong><small id="statusText">Siap nemenin kamu</small></div>
+        <button class="icon-button" id="clearChatBtn" title="Mulai obrolan baru" aria-label="Mulai obrolan baru">↻</button>
+      </header>
+      <div class="demo-banner"><span>✦</span> Mode demo gratis: jawaban dibuat dari pola lokal, belum menggunakan AI online.</div>
+      <div class="messages" id="messages" aria-live="polite" aria-label="Percakapan"></div>
+      <div class="suggestions" id="suggestions">
+        <button data-prompt="Aku capek banget hari ini">Aku capek hari ini</button>
+        <button data-prompt="Kasih aku semangat dong">Kasih semangat ♡</button>
+        <button data-prompt="Ceritain sesuatu yang lucu">Bikin aku senyum</button>
+      </div>
+      <form class="composer" id="chatForm">
+        <textarea id="messageInput" rows="1" maxlength="1000" placeholder="Cerita ke Hana..." aria-label="Tulis pesan"></textarea>
+        <button class="send-button" type="submit" aria-label="Kirim pesan">➤</button>
+      </form>
+      <div class="composer-foot">Tekan Enter untuk kirim · Shift + Enter untuk baris baru</div>
+    </section>
+
+    <section class="memory-panel hidden" id="memoryPanel">
+      <header class="memory-header"><div><p class="eyebrow">OUR LITTLE UNIVERSE</p><h1>Kenangan kita ♡</h1><p>Hal-hal yang kamu pilih untuk disimpan di perangkat ini.</p></div><button class="icon-button" id="backToChat">✕</button></header>
+      <div class="privacy-note"><span>🔒</span><div><strong>Privat di perangkat ini</strong><p>Ingatan dan chat disimpan di browser yang kamu gunakan. Tidak disinkronkan ke perangkat lain. Hindari menyimpan rahasia sensitif.</p></div></div>
+      <div class="memory-form card">
+        <label for="memoryInput">Simpan hal penting</label>
+        <textarea id="memoryInput" rows="3" maxlength="500" placeholder="Contoh: Aku suka dipanggil sayang dan suka kata-kata penyemangat."></textarea>
+        <button class="primary-button" id="saveMemoryBtn">Simpan kenangan ♡</button>
+      </div>
+      <div class="memory-list-wrap"><div class="list-heading"><h2>Ingatan tersimpan</h2><button class="text-button" id="exportBtn">Ekspor data</button></div><div id="memoryList" class="memory-list"></div></div>
+      <div class="danger-zone card"><div><strong>Atur data kamu</strong><p>Hapus chat atau seluruh data lokal kapan saja.</p></div><button class="danger-button" id="deleteAllBtn">Hapus semua data</button></div>
+    </section>
+  </main>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>
