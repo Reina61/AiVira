@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fce3f2"/><stop offset="1" stop-color="#e8defb"/></linearGradient><linearGradient id="hair" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f6b9dc"/><stop offset="1" stop-color="#c47ab8"/></linearGradient></defs>
+<rect width="300" height="300" rx="150" fill="url(#bg)"/><circle cx="150" cy="153" r="112" fill="#ffffff" opacity=".28"/>
+<!-- hair behind --> <path d="M67 139C55 70 93 28 153 29c65 0 99 47 87 112l-9 92-40 32H108l-35-42Z" fill="url(#hair)"/>
+<!-- neck/body --> <path d="M116 211h68v45c-14 20-55 20-68 0Z" fill="#ffd8e9"/><path d="M79 300c5-48 29-67 71-69 43 2 67 21 72 69Z" fill="#fff7fc"/><path d="M124 231l26 27 26-27 16 12-23 57h-38l-23-57Z" fill="#d9bce9"/>
+<!-- ears and face --> <ellipse cx="92" cy="145" rx="15" ry="23" fill="#ffd9d7"/><ellipse cx="208" cy="145" rx="15" ry="23" fill="#ffd9d7"/><path d="M91 107c4-44 29-62 61-62s58 21 60 62l-5 54c-7 47-32 68-55 68s-49-21-56-68Z" fill="#ffe0d9"/>
+<!-- bangs --> <path d="M87 130C76 80 106 44 152 43c48-1 74 35 62 84-17-9-26-27-28-46-21 25-49 32-85 31l-10 30Z" fill="url(#hair)"/><path d="M107 76c-6 27-1 48 7 63-20-10-27-30-24-49Z" fill="#f8c5e2"/><path d="M183 63c21 17 29 40 25 66 13-18 14-39 3-57Z" fill="#d18cbe"/>
+<!-- eyes --> <ellipse cx="124" cy="145" rx="12" ry="16" fill="#62405e"/><ellipse cx="176" cy="145" rx="12" ry="16" fill="#62405e"/><ellipse cx="127" cy="140" rx="4" ry="5" fill="#fff"/><ellipse cx="179" cy="140" rx="4" ry="5" fill="#fff"/><path d="M110 126q14-10 27 0M163 126q14-10 27 0" fill="none" stroke="#704563" stroke-width="4" stroke-linecap="round"/>
+<!-- blush and smile --> <ellipse cx="108" cy="169" rx="15" ry="7" fill="#f6a9ba" opacity=".6"/><ellipse cx="192" cy="169" rx="15" ry="7" fill="#f6a9ba" opacity=".6"/><path d="M139 177q11 12 22 0" fill="none" stroke="#c56e89" stroke-width="3" stroke-linecap="round"/><path d="M74 100q-9-42 26-63M224 97q15-31-2-47" fill="none" stroke="#efb0d8" stroke-width="9" stroke-linecap="round"/>
+<path d="M52 83l5 10 11 2-9 7 2 11-9-6-10 6 3-11-9-7 12-2Z" fill="#fff" opacity=".8"/><path d="M239 187l4 8 9 1-7 6 2 9-8-5-8 5 2-9-7-6 9-1Z" fill="#fff" opacity=".75"/>
+</svg>
